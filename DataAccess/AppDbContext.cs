@@ -9,6 +9,7 @@ namespace SingletonPatternExample.DataAccess
     public class AppDbContext : DbContext
     {
         public DbSet<Car> Cars { get; set; }
+        public DbSet<Airplane> Airplanes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
